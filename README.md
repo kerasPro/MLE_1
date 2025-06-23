@@ -65,9 +65,71 @@ El conjunto de datos contiene toda la información sobre los automóviles, el no
 
 # 4. Model Card
 
+## 🧠 Regressión Lineal de Precios de Autos
+
+## 📌 Propósito
+Este modelo predice el precio de un auto basado en características técnicas y categóricas como tipo de motor, marca, carrocería, entre otros. Fue creado con fines educativos y experimentales.
+
+## 📂 Datos
+- **Fuente:** Dataset original con variables de autos.
+- **Tamaño:** 205 registros y 26 columnas.
+- **Preprocesamiento:** OneHotEncoding para variables categóricas, escalado estándar para numéricas.
+- **División:** 70% entrenamiento / 30% prueba.
+
+## ⚙️ Modelo
+- **Tipo:** Regresión Lineal
+- **Librerías:** scikit-learn, pandas, seaborn
+- **Pipeline:** Preprocesamiento + modelo lineal usando `Pipeline` de scikit-learn
+
+## 📈 Métricas de Evaluación
+
+- MAE: 2182.73
+- MSE: 10519683.88
+- RMSE: 3243.41
+- R2: 0.84
+
+## ✅ Fortalezas
+- Fácil de interpretar
+- Basado en un pipeline reproducible
+- Buen rendimiento general en datos limpios
+
+## ⚠️ Limitaciones
+- No capta relaciones no lineales complejas
+- Puede verse afectado por outliers o multicolinealidad si no se controla
+
+## 🧪 Consideraciones éticas
+Este modelo no debe ser utilizado para decisiones reales de compra-venta sin supervisión humana. Fue entrenado con un dataset fijo y puede reflejar sesgos propios de los datos.
+
+## 📦 Uso esperado
+Ideal para tareas de regresión lineal educativa, explicaciones de modelos o pruebas de pipelines.
+
+## ✍️ Autor
+Creado por [Ronaldo]  
+Última actualización: 22 de Junio 2025
+
 # 5. Resultados
 
+El modelo de regresión lineal fue evaluado sobre el conjunto de prueba, obteniendo las siguientes métricas:
+
+- MAE (Mean Absolute Error): 2182.73
+- MSE (Mean Squared Error): 10,519,683.88
+- RMSE (Root Mean Squared Error): 3243.41
+- R² (Coeficiente de determinación): 0.84
+
+Estos resultados indican que el modelo explica aproximadamente el 84% de la variabilidad en los precios de los autos. El RMSE sugiere que, en promedio, las predicciones del modelo presentan un error de aproximadamente $3,243 respecto al valor real. Considerando que se trata de un modelo lineal simple, el desempeño es sólido, especialmente si el objetivo es lograr interpretabilidad y rapidez en el entrenamiento.
+
+Asimismo, se visualiza un rendimiento bueno al visualizar las predicciones con lo real siento solo una regresión lineal.
+
+![alt text](image.png)
+
+
 # 6. Conclusiones
+
+El modelo de regresión lineal desarrollado para predecir precios de automóviles ha demostrado un buen desempeño, logrando un R² de 0.84. Esto indica que el modelo es capaz de explicar gran parte de la variación en los precios a partir de las características técnicas y categóricas de los autos.
+Además, se construyó un pipeline completo y reproducible que incluye preprocesamiento, codificación categórica y estandarización de variables numéricas. Esto garantiza una implementación limpia y sin fuga de datos.
+Si bien el modelo es interpretable y eficiente, presenta limitaciones frente a relaciones no lineales complejas o outliers, lo cual podría abordarse en versiones futuras mediante modelos más sofisticados (como XGBoost o regresión polinómica).
+En resumen, este proyecto proporciona una base sólida para análisis predictivos en el sector automotriz y puede servir como punto de partida para mejoras posteriores, visualizaciones interactivas o despliegue en entornos reales.
+
 
 ## Project Organization
 

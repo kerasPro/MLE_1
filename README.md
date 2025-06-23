@@ -18,7 +18,7 @@ Desarrollar un modelo de Machine Learning capaz de predecir con precisión el pr
 
 # 2. Diagrama de Flujo de Proyecto
 
-<pre><code>```mermaidflowchart LRA["Datos en csv"] --> B["Preprocesamiento de datos"]B --> C["Feature Engineering"]C --> D["Entrenamiento del modelo"]D --> E["Evaluación del modelo"]E --> F["Modelo .joblib"]```</code></pre
+<pre><code>```mermaidflowchart LRA["Datos en csv"] --> B["Preprocesamiento de datos"]B --> C["Feature Engineering"]C --> D["Entrenamiento del modelo"]D --> E["Evaluación del modelo"]E --> F["Modelo .joblib"]```</code></pre>
 
 
 # 3. Descripción del Dataset
